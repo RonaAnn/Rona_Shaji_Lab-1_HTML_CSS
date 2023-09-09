@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Gmail Account</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        video {
+            position: fixed;
+        }
+
+        .form {
+            position: absolute;
+            border: 1px solid rgb(225, 216, 216);
+            border-radius: 5px;
+            top: 15%;
+            left: 35%;
+            min-width: 350px;
+            padding-left: 40px;
+        }
+
+        input {
+            width: 300px;
+            min-width: 100px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            background-color: whitesmoke;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+
+        input:focus {
+            background-color: steelblue;
+            outline: none;
+            opacity: 0.35;
+            color: black;
+        }
+
+        button {
+            margin: 20px;
+            width: 100px;
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            background-color: rgb(175, 102, 243);
+            font-size: 18px;
+            text-align: center;
+        }
+
+        button:focus {
+            background-color: rgb(125, 96, 152);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <video autoplay loop muted>
+            <source src="Background.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="form">
+            <h1>Create Gmail Account</h1>
+            <form action="">
+                <input type="text" title="Full name" placeholder="Full Name" required><br>
+                <input type="number" title="Contact no" min="6000000000" max="9999999999" placeholder="Contact Number"
+                    required><br>
+                <input type="email" title="Email" placeholder="Enter email id" required><br>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
